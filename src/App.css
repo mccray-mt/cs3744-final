@@ -8,8 +8,8 @@ CSS HEX
 */
 
 :root {
-  --accent: #0f1626ff;
-  --focus: #b02e0cff;
+  --accent: #181D27;
+  --focus: #247BA0;
   --background: #f4ededff;
   --text: #1b2021ff;
   --hyerlink: #2892d7ff;
@@ -18,9 +18,11 @@ CSS HEX
 body {
   display: flex;
   flex-direction: column;
+  text-align: center;
   background-color: var(--background);
   font-family: 'Montserrat Alternates', sans-serif;
   color: var(--text);
+  background-color: var(--background);
 
 }
 
@@ -45,45 +47,33 @@ h1 {
   background-color: var(--focus);
 }
 
-.projects-page {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--background);
-  font-family: 'Montserrat Alternates', sans-serif;
-  color: var(--text);
+.projects-page,
+.home, .project {
   margin: 20px;
   min-height: 100vh;
 }
 
-.home {
-  min-height: 100vh;
+.projects-page h1 {
+  margin: 20px;
 }
 
-.projects-page div {
-  display: flex;
-  justify-content: space-around;
+.proj-card {
+  margin:0px 20px;
+  border-radius: 10px;
 }
 
-.project {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  outline: var(--accent) solid 5px;
+.proj-card-title {
+  font-family: 'Comfortaa', cursive;
 }
 
-.proj-link {
-  color: var(--text);
-  text-decoration: none;
-  padding: 20px 50px;
-  margin: 10px;
-}
-
-.proj-link:hover {
-  background-color: var(--focus);
+.btn {
+  background-color: var(--accent) !important;
   color: var(--background);
+  border: none !important;
+}
 
+.btn:hover {
+  background-color: var(--focus) !important;
 }
 
 #placeholder {

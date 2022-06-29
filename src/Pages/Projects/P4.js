@@ -1,7 +1,11 @@
+import finance from "../../rsc/finance.svg"
+
 function P4() {
   return (
     <div className="project">
-      <h1>Project 4</h1>
+      <div id="svg">
+        <img src={finance} alt="SVG Graph" />
+      </div>
     </div>
   );
 }

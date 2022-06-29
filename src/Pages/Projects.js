@@ -1,26 +1,72 @@
-import P1 from "./Projects/P1";
-import P2 from "./Projects/P2";
-import P3 from "./Projects/P3";
-import P4 from "./Projects/P4";
-import { Link, Route, Routes } from "react-router-dom";
+import { Card, Button, CardGroup } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
+import pic1 from "../rsc/P1.png";
+import pic2 from "../rsc/P2.png";
+import pic3 from "../rsc/P3.png";
+import pic4 from "../rsc/P4.png";
 
 
 function Projects() {
     return (
         <div className="projects-page">
             <h1>Projects</h1>
-            <div>
-                <Link to="/projects/p1" className = "proj-link">Project 1</Link>
-                <Link to="/projects/p2" className = "proj-link">Project 2</Link>
-                <Link to="/projects/p3" className = "proj-link">Project 3</Link>
-                <Link to="/projects/p4" className = "proj-link">Project 4</Link>
-            </div>
-            <Routes>
-                <Route path="/p1" element={<P1 />} />
-                <Route path="/p2" element={<P2 />} />
-                <Route path="/p3" element={<P3 />} />
-                <Route path="/p4" element={<P4 />} />
-            </Routes>
+            <CardGroup>
+                <Card className="proj-card">
+                    <Card.Img variant="top" src={pic1} />
+                    <Card.Body>
+                        <Card.Title className="proj-card-title">Astronomy Pic of the Day</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Project 1</Card.Subtitle>
+                        <Card.Text>
+                            A simple button that when clicked displays the NASA Astronomy Pic of the Day (APOD) alongside some relevant information
+                        </Card.Text>
+                        <LinkContainer to="/projects/p1">
+                            <Button variant="primary">See this project</Button>
+                        </LinkContainer>
+                    </Card.Body>
+                </Card>
+
+                <Card className="proj-card">
+                    <Card.Img variant="top" src={pic2} />
+                    <Card.Body className="proj-card">
+                        <Card.Title className="proj-card-title">Number Array</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Project 2</Card.Subtitle>
+                        <Card.Text>
+                            A react component that scales the number of objects displayed and changes the visuals based on each value
+                        </Card.Text>
+                        <LinkContainer to="/projects/p2">
+                            <Button className = "Button">See this project</Button>
+                        </LinkContainer>
+                    </Card.Body>
+                </Card>
+
+                <Card className="proj-card">
+                    <Card.Img variant="top" src={pic3} />
+                    <Card.Body className="proj-card">
+                        <Card.Title className="proj-card-title">Space Travel in P5</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Project 3</Card.Subtitle>
+                        <Card.Text>
+                            A p5.js canvas that allows for a simple game to be played in which a ship is flown around space using the arrow keys and spacebar
+                        </Card.Text>
+                        <LinkContainer to="/projects/p3">
+                            <Button variant="primary">See this project</Button>
+                        </LinkContainer>
+                    </Card.Body>
+                </Card>
+                
+                <Card className="proj-card">
+                    <Card.Img variant="top" src={pic4} />
+                    <Card.Body className="proj-card">
+                        <Card.Title className="proj-card-title">Stock Graph</Card.Title>
+                        <Card.Subtitle className="mb-2 text-muted">Project 4</Card.Subtitle>
+                        <Card.Text>
+                            A d3 graph that displayes JSON data taken from the Yahoo Finanace API
+                        </Card.Text>
+                        <LinkContainer to="/projects/p4">
+                            <Button variant="primary">See this project</Button>
+                        </LinkContainer>
+                    </Card.Body>
+                </Card>
+            </CardGroup>
         </div>
     );
 }
