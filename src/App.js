@@ -16,10 +16,10 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path={"*"} element={<Home />}></Route>
                 <Route path={"projects/*"} element={<Projects />}></Route>
-                <Route path={"projects/p1"} element={<P1 />}></Route>
-                <Route path={"projects/p2"} element={<P2 />}></Route>
-                <Route path={"projects/p3"} element={<P3 />}></Route>
-                <Route path={"projects/p4"} element={<P4 />}></Route>
+                <Route path={"projects/1"} element={<P1 />}></Route>
+                <Route path={"projects/2"} element={<P2 />}></Route>
+                <Route path={"projects/3"} element={<P3 />}></Route>
+                <Route path={"projects/4"} element={<P4 />}></Route>
             </Route>
         </Routes>
     )
