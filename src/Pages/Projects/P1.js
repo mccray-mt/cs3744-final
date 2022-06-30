@@ -28,10 +28,7 @@ function fetchPicture() {
         img = document.createElement("img")
         img.setAttribute("src", url)
         img.setAttribute("alt", "Astronomy Picture of the Day")
-        img.setAttribute("className", "img-fluid")
-        img.style.display = "flex"
-        img.style.margin = "auto"
-        img.style.textAlign = "center"
+        img.setAttribute("className", 'img-thumbnail')
       }
       if (media_type === "video") {
         img = document.createimgent("iframe")

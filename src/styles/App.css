@@ -26,16 +26,23 @@ body {
 
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Comfortaa', cursive;
 }
 
 h3 {
   font-size: 25px;
 }
+
 .navbar {
   background-color: var(--accent) !important;
   padding: 0;
+}
+
+.navbar .container{
+  margin: 0;
+  display: flex;
 }
 
 .navbar .nav-link {
@@ -56,8 +63,18 @@ h3 {
   padding-bottom: 20px;
 }
 
+.top h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.info>.row>p {
+  padding-bottom: 100px;
+}
+
 .projects-page,
-.home, .project {
+.home,
+.project {
   margin: 20px;
   min-height: 80vh;
 }
@@ -67,13 +84,14 @@ h3 {
 }
 
 .proj-card {
-  margin:0px 20px;
+  margin: 0px 20px;
   border-radius: 10px;
 }
 
 .accordion {
   text-align: left;
 }
+
 .proj-card-title {
   font-family: 'Comfortaa', cursive;
 }

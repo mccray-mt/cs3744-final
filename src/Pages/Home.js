@@ -6,13 +6,13 @@ function Home() {
     <div className="home">
       <Container fluid className="top">
         <Row className="justify-content-md-center">
-          <Col md="auto"><Image src={profilepic} alt="Picture of Mason" width="300" height="300" /></Col>
+          <Col md="auto"><Image src={profilepic} className='img-fluid shadow-4' alt="Picture of Mason" width="450" height="450" /></Col>
           <Col md="auto">
-            <div className="info">
-              <h1>Hi, I'm Mason McCray</h1>
-              <p> I'm a graduating senior at Virginia Tech majoring in robotics and mecchatronics in the engineering department with a minor in computer science</p>
-              <h2>Education</h2>
-              <ul>
+            <Container fluid className="info">
+              <Row><h1>Hi, I'm Mason McCray</h1></Row>
+              <Row><p>I'm a graduating senior at Virginia Tech majoring in robotics and mecchatronics in the engineering department with a minor in computer science</p></Row>
+              <Row><h2>Education</h2></Row>
+              <Row><ul>
                 <li>
                   <h3>Virginia Tech, Blacksburg Virginia (Graduation in Spring 2023)</h3>
                   <p>Overall GPA: 3.95, In-Major GPA: 4.00</p>
@@ -20,8 +20,8 @@ function Home() {
                 <li>
                   <h3>Maggie L. Walker Governor’s School, Richmond Virginia (Graduation in Spring 2019)</h3>
                 </li>
-              </ul>
-            </div>
+              </ul></Row>
+            </Container>
           </Col>
         </Row>
       </Container>
@@ -155,8 +155,8 @@ function PersonalProjects() {
         <Accordion.Item eventKey="0">
           <Accordion.Header>Custom Built Voron 2.4 3D Printer</Accordion.Header>
           <Accordion.Body>
-            Sourced and built a custom 3D printer using an online open source schematic. Incorperated multiple cameras and a 
-            web app for remote control and monitoring, along wih a discord bot for status updates. Prints most materials at 
+            Sourced and built a custom 3D printer using an online open source schematic. Incorperated multiple cameras and a
+            web app for remote control and monitoring, along wih a discord bot for status updates. Prints most materials at
             roughly 300mm/s
           </Accordion.Body>
         </Accordion.Item>
