@@ -26,10 +26,13 @@ body {
 
 }
 
-h1 {
+h1, h2 {
   font-family: 'Comfortaa', cursive;
 }
 
+h3 {
+  font-size: 25px;
+}
 .navbar {
   background-color: var(--accent) !important;
   padding: 0;
@@ -47,10 +50,16 @@ h1 {
   background-color: var(--focus);
 }
 
+.top {
+  text-align: left;
+  display: inline-flex;
+  padding-bottom: 20px;
+}
+
 .projects-page,
 .home, .project {
   margin: 20px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .projects-page h1 {
@@ -62,6 +71,9 @@ h1 {
   border-radius: 10px;
 }
 
+.accordion {
+  text-align: left;
+}
 .proj-card-title {
   font-family: 'Comfortaa', cursive;
 }
